@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+rel="stylesheet"
+href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+<i class="fa-solid fa-face-glasses"></i> -->
+    <title>MakeYourTrip</title>
+   <!-- <link rel="icon" href="fa-solid fa-face-glasses"> -->
+
+
+	<style>
+		.book .row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+
+.book .row .image{
+  flex:1 1 40rem;
+}
+
+.book .row .image img{
+  width:100%;
+}
+
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 0rem 1rem rgb(0 0 0 / 10%);
+    border-radius: 0.5rem;
+}
+
+.book .row form .inputBox{
+  padding:.5rem 0;
+}
+
+.book .row form .inputBox input{
+	width: 100%;
+    padding: 1rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    font-size: 1rem;
+    color: #333;
+    text-transform: none;
+}
+
+.book .row form .inputBox h3{
+	font-size: 1rem;
+    padding: 1rem 0;
+    color: #666;
+}
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+	</style>
+
+</head>
+<body>
+
+
+
+
+
+    
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                    <img src="images/triplogo1.jpg" style="height: 50px;">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="#" class="active"> Home</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="aboutus.html"> About</a></li>
+                        <li><a href="contact.html"> Contact us</a></li>
+                        <li><a href="latestnews.html"> Latest News</a></li>
+                    </ul>
+                </nav>
+            
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+    
+            <div class="row">
+                <div class="col-2">
+                    <h1>Travel Tour</h1>
+                    <p>Looking to Book a Dream Vacation? Call Us Today! From Crusing to All-inclusive resorts, & Luxury Travel, we can find you the perfect trip!</p>
+                    <a href="#" class="btn">Explore Now</a>
+                </div>
+                <div class="col-2">
+                    <img src="images/t1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="category">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/t2.jpg" style="height: 50vh;">
+                </div>
+                <div class="col-3">
+                    <img src="images/t3.jpg" style="height: 50vh;">
+                </div>
+                <div class="col-3">
+                    <img src="images/t4.jpg" style="height: 50vh;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+<div class="small-container">
+	<h2 class="title">Explore New Tour</h2>
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide">
+		  
+		<div class="row">
+			<div class="col-4">
+				<a href="#">
+					<img src="images/a1.jpg" height="300px" width="300px">
+				</a>
+				<h4>America Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$550.00</p>
+				<p>5 Days and 4 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/l1.jpg" height="300px" width="300px">
+				</a>
+				<h4>London Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$600.00</p>
+				<p>5 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/f1.jpg" height="300px" width="300px">
+				</a>
+				<h4>France Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$500.00</p>
+				<p>5 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/s1.jpg" height="300px" width="300px">
+				</a>
+				<h4>Singapoor Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$600.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+		</div>
+
+
+	  </div>
+	  <div class="swiper-slide">
+		  
+
+		<div class="row">
+			<div class="col-4">
+				<a href="#">
+					<img src="images/a1.jpg" height="300px" width="300px">
+				</a>
+				<h4>America Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$550.00</p>
+				<p>5 Days and 4 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/l1.jpg" height="300px" width="300px">
+				</a>
+				<h4>London Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$600.00</p>
+				<p>5 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/f1.jpg" height="300px" width="300px">
+				</a>
+				<h4>France Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$500.00</p>
+				<p>5 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/s1.jpg" height="300px" width="300px">
+				</a>
+				<h4>Singapoor Trip</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$600.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+		</div>
+
+
+	  </div>
+	 
+	<div class="swiper-pagination"></div>
+  </div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+	var swiper = new Swiper(".mySwiper", {
+	  spaceBetween: 30,
+	  centeredSlides: true,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	  },
+	  pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	  },
+	  navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	  },
+	});
+  </script>
+
+
+
+<!-- explore tour -->
+
+
+
+
+<div class="small-container">
+	<h2 class="title">Explore Other Countries</h2>
+
+ <!-- Swiper -->
+ <div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide">
+
+		<div class="row">
+			<div class="col-4">
+				<a href="#">
+					<img src="images/j1.jpg" style="height: 40vh; ">
+				</a>
+				<h4>Japan Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/m1.jpg" style="height: 40vh;">
+				</a>
+				<h4>malasyia Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+			
+			<div class="col-4">
+				<a href="#">
+					<img src="images/i1.jpg" style="height: 40vh;">
+				</a>
+				<h4>Italy Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+		</div>
+
+
+	  </div>
+
+	  <div class="swiper-slide" >
+
+
+		<div class="row">
+			<div class="col-4">
+				<a href="#">
+					<img src="images/i1.jpg" style="height: 40vh;">
+				</a>
+				<h4>Italy Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/m1.jpg" style="height: 40vh;">
+				</a>
+				<h4>Malaysia Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+			</div>
+			<div class="col-4">
+				<a href="#">
+					<img src="images/j1.jpg" style="height: 40vh;">
+				</a>
+				<h4>japan Tour</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star-half-o"></i>
+				</div>
+				<p>$1500.00</p>
+				<p>6 Days and 5 Nights</p>
+			</div>
+		</div>
+
+
+	  </div>
+	</div>
+	<div class="swiper-pagination"></div>
+  </div>
+</div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+	var swiper = new Swiper(".mySwiper", {
+	  spaceBetween: 30,
+	  centeredSlides: true,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	  },
+	  pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	  },
+	  navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	  },
+	});
+  </script>
+
+
+
+
+
+
+<!-- EXPLORE OTHER COUNTRIES END -->
+
+<!-- LATEST NEWS -->
+
+<div class="small-container">
+    <h2 class="title">Latest News</h2>
+<div class="img-slider">
+    <div class="slide active">
+      <img src="images/A1.jpg" alt="" height="500px" width="100%">
+      <div class="info">
+        <h2>60% Discount on America Trip</h2>
+        <p>60% off if you book your trip between 7pm to 12am</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/f1.jpg" alt="" height="500px" width="100%">
+      <div class="info">
+        <h2>60% Discount on France Trip</h2>
+        <p>60% off if you book your trip between 7pm to 12am</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/s1.jpg" alt="" height="500px" width="100%">
+      <div class="info">
+        <h2>60% Discount on Singapoor Trip</h2>
+        <p>60% off if you book your trip between 7pm to 12am</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/l1.jpg" alt="" height="500px" width="100%">
+      <div class="info">
+        <h2>60% Discount on London Trip</h2>
+        <p>60% off if you book your trip between 7pm to 12am</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="images/i1.jpg" alt="" height="500px" width="100%">
+      <div class="info">
+        <h2>60% Discount on Italy Trip</h2>
+        <p>60% off if you book your trip between 7pm to 12am</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+</div>
+
+  <script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+//   var manualNav = function(manual){
+//     slides.forEach((slide) => {
+//       slide.classList.remove('active');
+
+//       btns.forEach((btn) => {
+//         btn.classList.remove('active');
+//       });
+//     });
+
+//     slides[manual].classList.add('active');
+//     btns[manual].classList.add('active');
+//   }
+
+//   btns.forEach((btn, i) => {
+//     btn.addEventListener("click", () => {
+//       manualNav(i);
+//       currentSlide = i;
+//     });
+//   });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 5000);
+    }
+    repeater();
+  }
+  repeat();
+  </script>
+
+<!-- LATEST NEWS END -->
+
+
+
+<!-- book section starts  -->
+
+
+<section class="book" id="book">
+
+
+
+    <h2 class="title">
+        <span>B</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>o</span>
+        <span>w</span>
+    </h2>
+
+
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book flight.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Where To</h3>
+                <input type="text" placeholder="place name">
+            </div>
+            <div class="inputBox">
+                <h3>How Many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>Arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- book section ends -->
+
+
+
+
+<!-- testimonials -->
+
+
+<div class="testimonials">
+
+<div class="small-container" margin="20px">
+	<h2 class="title">Testimonials</h2>
+
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide">
+
+
+		<div class="col-4">
+			<i class="fa fa-quote-left"></i>
+			<p>A very emotional experience. Thank you Iris Hami for leading this successful trip. The hotel, the food, the guide and the traveling and trip schedule including visiting significant places in Bahrain made this trip an experience which was perfectly orchestrated and adjusted according to limits and changes.
+				Thank you for all your efforts.
+				
+				</p>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+			<img src="images/testimonial1.jpg" height="50px" width="50px">
+			<h3>Alena</h3>
+		</div>
+
+	  </div>
+	  <div class="swiper-slide">
+		<div class="col-4">
+			<i class="fa fa-quote-left"></i>
+			<p>A very emotional experience. Thank you Iris Hami for leading this successful trip. The hotel, the food, the guide and the traveling and trip schedule including visiting significant places in Bahrain made this trip an experience which was perfectly orchestrated and adjusted according to limits and changes.
+				Thank you for all your efforts.
+				
+				</p>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+			<img src="images/testimonial2.jpg" height="50px" width="50px">
+			<h3>Alexa</h3>
+		</div>
+	  </div>
+	  <div class="swiper-slide">
+
+
+		<div class="col-4">
+			<i class="fa fa-quote-left"></i>
+			<p>A very emotional experience. Thank you Iris Hami for leading this successful trip. The hotel, the food, the guide and the traveling and trip schedule including visiting significant places in Bahrain made this trip an experience which was perfectly orchestrated and adjusted according to limits and changes.
+				Thank you for all your efforts.
+				
+				</p>
+			<div class="rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+			<img src="images/testimonial3.jpg" height="50px" width="50px">
+			<h3>Selena</h3>
+		</div>
+
+	  </div>
+	</div>
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+  </div>
+</div>
+</div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+     var swiper = new Swiper(".mySwiper", {
+	  spaceBetween: 30,
+	  centeredSlides: true,
+	  autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	  },
+	//   pagination: {
+	// 	el: ".swiper-pagination",
+	// 	clickable: true,
+	//   },
+	  navigation: {
+		nextEl: ".swiper-button-next",
+		prevEl: ".swiper-button-prev",
+	  },
+	});
+    </script>
+  
+
+
+
+
+
+<!-- TESTIMONIAL section ends -->
+
+
+<!-- footer -->
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download App</h3>
+				<p>Download for Android And iOS mobile phone</p>
+				<div class="app-logo">
+					<img src="images/play-store.png">
+					<img src="images/app-store.png">
+				</div>
+			</div>
+			
+			<div class="footer-col-2">
+				<img src="images/triplogo1.jpg" style="height: 50px;">
+				<p>Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts, it even breaks your heart. But that’s okay. The journey changes you; it should change you. It leaves marks on your memory, on your consciousness, on your heart, and on your body. You take something with you. Hopefully, you leave something good behind.</p>
+			</div>
+			<div class="footer-col-3">
+				<h3 style="margin-top: 20px;">Quick Links</h3>
+				<ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="latestnews.html">Latest News</a></li>
+                    <!-- <li><a href="#">Login/Signup</a></li> -->
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3>
+				<ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+				</ul>
+			</div>
+		</div> 
+		<hr>
+		<p class="copyright">Copyright @ 2022 By TOUR TRIP WEBSITE</p>
+	</div> 
+</div>
+
+ 
+ <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
+
+    
+</body>
+</html>
